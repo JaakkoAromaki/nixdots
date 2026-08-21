@@ -1,0 +1,72 @@
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 15px;
+}
+
+.center-modules {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  padding: 0px 10px;
+  border-radius: 6px;
+}
+
+.launcher-btn {
+  background-color: #89b4fa;
+  color: #11111b;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-weight: bold;
+}
+
+.time-lbl {
+  color: #ffffff;
+}
+
+.volume-lbl, .cpu-lbl {
+  color: #a6e3a1;
+}
+
+window {
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+
+.timebox {
+  background-color: #171717;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 1px solid #3d3d3d;
+}
+
+.topbar {
+  background: transparent;
+}
+
+
+.time-lbl {
+  font-size: 15px;
+}
+
+.menu {
+  margin-left: 10px;
+  background-color: #171717;
+}
+
+.menu-icon {
+  color: #ffffff;
+  margin-left: 12px;
+}
+
+.nixos {
+  background-color: transparent;
+}
+
+.wifi {
+  background-color: #171717;
+}
+.wifi {
+  background-color: #171717;
+  padding: 0 15px;
+}

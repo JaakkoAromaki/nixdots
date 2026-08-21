@@ -1,0 +1,63 @@
+(defpoll time
+  :interval "5s"
+  `date +'{"hour":"%H","min":"%M"}'`)
+
+(defwindow topbar
+  :monitor 0
+  :geometry (geometry
+    :x "0%"
+    :y "4px"
+    :width "100%"
+    :height "28px"
+    :anchor "top center")
+  :reserve (struts
+    :side "top"
+    :distance "36px")
+  :stacking "fg"
+  :window-type "dock"
+  :wm-ignore false
+  :exclusive true
+  :class "topbar"
+  
+
+  (box
+    :orientation "h"
+
+    (menu)
+
+    (box
+      :hexpand false
+      :halign "center"
+
+      (time_module))
+
+    (wifi_box)))
+
+(defwidget time_module []
+  (box
+    :orientation "h"
+    :space-evenly false
+    :class "timebox"
+
+    (label
+      :text "${time.hour}:${time.min}"
+      :class "time-lbl")))
+
+(defwidget menu []
+  (box
+    :width "10%"
+    :halign "start"
+    :valign "center"
+    :class "nixos"
+    (image
+      :path "/home/hamlak/.config/eww/nixos.svg"
+      :class "menu-icon"
+      :image-width 32
+      :image-height 32)))
+
+(defwidget wifi_box []
+  (box
+    :orientation "h"
+    :class "wifi"
+    :width "0%"
+    (label :text "moi"))) 
